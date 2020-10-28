@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<!-- Extension LIVE SERVER, VISUAL ESTUDIO -->
+<!-- Go live! o click derecho "OPEN With LIVE SERVER", para ver los cambios que estamos haciendo  -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primer pagina</title>
+
+<!--CSS-->
+    <style>
+        body{background-color:grey;}
+
+        h1{color:red;}
+
+        h6{padding-left: 20px;}
+
+        p{background-color: black;
+        
+        color:white;}
+    </style>
+
+
+<!--Estructura HTML-->
+</head>
+<body>
+    <h1 id="nombre">Javier Coudray</h1>
+    <h6 id="fecha_nacimiento">01/02/1995</h6>
+    <p id="descripcion">Me llamo Javier Coudray, tengo 25 años y vivo en Cordoba</p>
+
+
+
+<!--Javasript-->
+    <script>
+        nombre = document.getElementById("nombre");
+        nombre.addEventListener("click", function(){alert("Bienvenido a mi sitio web!")});
+
+        descripcion = document.getElementById("descripcion");
+        descripcion.addEventListener("mouseenter", function(){
+            descripcion.style.color = "black";
+            descripcion.style.backgroundColor = "white";
+        });
+
+        descripcion.addEventListener("mouseout", function(){
+            descripcion.style.color = "white";
+            descripcion.style.backgroundColor = "black";
+        });
+    </script>
+
+
+</body>
+
+</html>
